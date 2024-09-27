@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google maps Api</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps Api</title>
 </head>
 <body>
-    <gmp-map
-    center="37.4220656,-122.0840897"
-    zoom="10"
-    map-id="DEMO_MAP_ID"
-    style="height: 100vh"
-  ></gmp-map>
+  <gmp-map
+  center="43.4142989,-124.2301242"
+  zoom="8"
+  map-id="DEMO_MAP_ID"
+  style="height: 100vh"
+>
+  <gmp-advanced-marker
 
-    <script src="app.js"></script>
-    <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADR1sdtbGNsAxgw9hfSEFkM26vqcBoUFI&libraries=maps&v=beta"
-    defer
-  ></script>
+  ></gmp-advanced-marker>
+  <!-- <gmp-advanced-marker
+    position="47.648994,-122.3503845"
+    title="Seattle, WA"
+  ></gmp-advanced-marker> -->
+</gmp-map>
+  
+
+
+
+  <script src="app.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADR1sdtbGNsAxgw9hfSEFkM26vqcBoUFI&loading=async&libraries=maps,marker&v=beta" defer>
+</script>
 </body>
 </html>
